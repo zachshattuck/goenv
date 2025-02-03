@@ -27,3 +27,4 @@ func main() {
 ## TODOs
 - [ ] Specify other filenames
 - [ ] Handle whitespace
+- [ ] Should this populate a `goenv`-specific dictionary (e.g. `goenv.Get("VAR")`) instead of polluting the os environment?
