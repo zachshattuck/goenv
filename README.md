@@ -22,7 +22,8 @@ func main() {
 ```
 
 ## Drawbacks
-- Will fail on empty lines (I know this is dumb and bad)
+- Whitespace and empty lines break it (yes I know this is dumb and bad)
 
 ## TODOs
 - [ ] Specify other filenames
+- [ ] Handle whitespace
