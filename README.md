@@ -3,20 +3,23 @@ Basic .env file parsing
 
 ## Usage:
 ```go
+import (
+  "fmt"
+  "github.com/zachshattuck/goenv"
+)
+
 func main() {
   // Will process `.env`
-  err := ProcessEnv()
+  err := goenv.ProcessEnv()
   if err != nil {
-		fmt.Print("Error setting environment: ")
-		fmt.Println(err)
-		return
+	fmt.Println("ProcessEnv: ", err)
+	return
   }
 
   myExpectedVar := os.Getenv("MY_EXPECTED_VAR")
   if myExpectedVar == "" {
-		fmt.Print("MY_EXPECTED_VAR not set!")
-		fmt.Println(err)
-		return
+	fmt.Print("MY_EXPECTED_VAR not set")
+	return
   }
 }
 ```
